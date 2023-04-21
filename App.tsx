@@ -14,6 +14,7 @@ import ua from './src/i18n/ua.json';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import Cabinet from './src/pages/cabinet';
 import Registration from './src/pages/registration';
+import { KeyboardAvoidingView } from 'react-native';
 
 const Drawer = createDrawerNavigator();
 const Stack = createStackNavigator();
@@ -30,7 +31,6 @@ i18n.use(initReactI18next)
 	fallbackLng: 'ua',
 	resources: languages
 });
-
 
 export default function App() {
 

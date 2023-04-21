@@ -3,9 +3,11 @@ import Burger from '../assets/burger.svg';
 import Back from '../assets/arrow_back.svg';
 import { useTranslation } from 'react-i18next';
 import Button from '../components/button';
+import { useAuthentication } from '../components/useAuth';
 
 export default function Cabinet({navigation}) {
 	const {t} = useTranslation();
+	const user = useAuthentication();
 
 	return (
 		<View style={styles.page}>
